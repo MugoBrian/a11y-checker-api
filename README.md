@@ -1,4 +1,4 @@
-# a11y-checker-api
+![image](https://github.com/MugoBrian/a11y-checker-api/assets/49617104/7d86ec96-39c0-4bf5-ad87-9b70252a31de)# a11y-checker-api
 
 This is project is the backend API server for the [mzima-a11y-checker](https://github.com/MugoBrian/mzima-a11y-checker) project
 
@@ -45,6 +45,31 @@ Open the browser and navigate to :  http://localhost:3000
 ## Usage
 
 Examples and instructions on how to use your project.
+
+To execute various API Endpoints, you can utilize your preferred API client, such as Thunder Client or Postman.
+
+Here are the available API Endpoints along with their associated HTTP methods:
+
+**POST METHODS:**
+
+1. The `/url` endpoint is designed to perform accessibility checks for website URLs.
+2. The `/code` endpoint is utilized for carrying out accessibility checks on code.
+
+You can initiate these checks using different accessibility testing tools as follows:
+
+- **Running With Pa11y:**
+  - Website URL: `http://localhost:3000/api/accessibility-check/pa11y/url`
+  - Code: `http://localhost:3000/api/accessibility-check/pa11y/code`
+
+- **Running With IBM Accessibility Checker:**
+  - Website URL: `http://localhost:3000/api/accessibility-check/ibm/url`
+  - Code: `http://localhost:3000/api/accessibility-check/ibm/code`
+
+- **Running With Axe Dev Core:**
+  - Website URL: `http://localhost:3000/api/accessibility-check/axe/url`
+  - Code: `http://localhost:3000/api/accessibility-check/axe/code`
+
+Feel free to choose the appropriate endpoint and testing tool based on your specific needs, and initiate the checks using your preferred API client, such as Thunder Client or Postman.
 
 ## Features
 
