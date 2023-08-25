@@ -25,18 +25,18 @@ Node version > 18.x.x
 To run the a11y-checker-api locally, follow these steps:
 
 Clone the repository:
-git clone https://github.com/MugoBrian/a11y-checker-api.git
+```git clone https://github.com/MugoBrian/a11y-checker-api.git```
 
 Navigate to the server directory:
 
-cd a11y-checker-api
+```cd a11y-checker-api```
 
 Install dependencies:
-npm install
+```npm install```
 
 Start the server:
 
-npm run serve
+```npm run serve```
 
 #### Running 
 
