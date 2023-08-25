@@ -69,14 +69,15 @@ You can initiate these checks using different accessibility testing tools as fol
   - Website URL: `http://localhost:3000/api/accessibility-check/axe/url`
   - Code: `http://localhost:3000/api/accessibility-check/axe/code`
   
-- **Parameters**
-  Url
+- **Parameters**:
+
+  - Url
     {
       "userInput":"https://example.com/"
     }
-  Code
+  - Code
     {
-      "userInput":"<img src='example.png' />"
+      "userInput":"`<img src='example.png' />`"
     }
 
 Feel free to choose the appropriate endpoint and testing tool based on your specific needs, and initiate the checks using your preferred API client, such as Thunder Client or Postman.
