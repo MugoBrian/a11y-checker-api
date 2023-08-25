@@ -1,8 +1,10 @@
+// const pa11y = require("pa11y");
 const pa11y = require("pa11y");
 const puppeteer = require("puppeteer");
 
 const pa11yUrlController = async (req, res) => {
   const url = req.body.userInput;
+  console.log(url);
   try {
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
@@ -11,12 +13,15 @@ const pa11yUrlController = async (req, res) => {
       waitUntil: "networkidle0",
     });
 
+    // Run the accessibility tests
+    console.time("Run the accessibility tests");
+
     const results = await pa11y(page);
 
+    console.timeEnd("Run the accessibility tests");
+    // Close the browser
     await browser.close();
-
     return res.json(results);
-
     // await
   } catch (error) {
     console.error(error);

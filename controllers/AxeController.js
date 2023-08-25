@@ -49,6 +49,7 @@ const axeUrlController = async (req, res) => {
 
   // Navigate to the specified URL
   // setTimeout(()=>{},)
+  console.time('The Process Navigation To Url');
   try {
     await page.goto(url, {
       waitUntil: "networkidle0",
@@ -56,6 +57,8 @@ const axeUrlController = async (req, res) => {
   } catch (err) {
     console.log(err);
   }
+
+  console.timeEnd('The Process Navigation To Url');
 
   // Inject the axe-core script into the page
   try {
@@ -67,10 +70,11 @@ const axeUrlController = async (req, res) => {
   }
 
   // Run the accessibility tests
+  console.time("Run the accessibility tests");
   const results = await page.evaluate(async () => {
     return await axe.run();
   });
-
+  console.timeEnd("Run the accessibility tests");
   // Close the browser
   await browser.close();
 

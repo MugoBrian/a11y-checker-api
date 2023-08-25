@@ -1,5 +1,6 @@
 const aChecker = require("accessibility-checker");
 const puppeteer = require("puppeteer");
+const dataFormat = require("../services/data.service");
 
 const ibmCodeController = async (req, res) => {
   try {
@@ -10,7 +11,7 @@ const ibmCodeController = async (req, res) => {
     page.setContent(code);
 
     await aChecker.getCompliance(page, "/scans", (data) => {
-      const results = data.results;
+      const results = dataFormat(data);
       return res.json(results);
     });
   } catch (error) {
@@ -27,11 +28,11 @@ const ibmUrlController = async (req, res) => {
     await page.goto(url, { waitUntil: "networkidle0" });
 
     await aChecker.getCompliance(page, "/scans", (data) => {
-      const results = data;
+      const results = dataFormat(data);
       return res.json(results);
     });
   } catch (error) {
-    res.status(500).send({ error: "An error occurred during testing" });
+    res.status(500).send(error);
   }
 };
 
