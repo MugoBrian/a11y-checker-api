@@ -1,4 +1,4 @@
-![image](https://github.com/MugoBrian/a11y-checker-api/assets/49617104/7d86ec96-39c0-4bf5-ad87-9b70252a31de)# a11y-checker-api
+# a11y-checker-api
 
 This is project is the backend API server for the [mzima-a11y-checker](https://github.com/MugoBrian/mzima-a11y-checker) project
 
