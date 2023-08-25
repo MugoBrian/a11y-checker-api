@@ -1,5 +1,3 @@
-
-API Backend for Mzima Web Accessibility Checker Tool
 # a11y-checker-api
 
 This is project is the backend API server for the [mzima-a11y-checker](https://github.com/MugoBrian/mzima-a11y-checker) project
