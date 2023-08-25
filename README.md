@@ -92,7 +92,7 @@ List of key features:
 ## Support and Contact
 
 How users can seek support or contact you for assistance.
-Incase of any issues raising it in the Github Issues tab or contact [me](brianmuchirimugo@gmail.com)
+Incase of any issues raise it in the Github Issues tab for now and I'll get back to you ASAP.
 
 ## Acknowledgments
 
