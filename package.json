@@ -19,7 +19,8 @@
     "nodemon": "^3.0.1",
     "pa11y": "^6.2.3",
     "puppeteer": "^20.9.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "webpack:" "^5.105.2"
   },
   "devDependencies": {
     "webpack-cli": "^6.0.1"
